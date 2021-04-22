@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Inspiration by Qur'an Ayahs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <img v-bind:src="picture">
+        <h1>{{ arabText }}</h1>
+        <h3>{{ arti }}</h3>
+        <h3 class="surat_and_ayat">{{ nama_surat }} ({{ trans_surat }}) {{ surat_ke }} : {{ ayat_ke }}</h3>
+        <button v-on:click="getInspiration()">Get Inspiration</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
